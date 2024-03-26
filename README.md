@@ -1,4 +1,4 @@
-![image](https://github.com/iidabawaj/ImageProcessing/assets/139181626/91c2fde7-1b4f-45bb-80f8-0b22fa447947)# Image Processing Project
+# Image Processing Project
 Implementation of Image Processing Techniques to enhance images from security cameras.
 
 ## Goal of the project
