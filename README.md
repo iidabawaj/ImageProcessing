@@ -21,18 +21,14 @@ import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 
-# Load the image with salt-and-pepper noise
 image_path = '/content/parking.jpg'
 image = cv2.imread(image_path)
 
-# Apply Non-Local Means Denoising
 denoised_image = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
 
-# Enhance color by increasing contrast
 contrast_factor = 1.2
 enhanced_color = cv2.multiply(denoised_image, np.array([contrast_factor]))
 
-# Display the original, denoised, and enhanced color images using plt.subplot
 plt.figure(figsize=(15, 5))
 
 plt.subplot(131), plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)), plt.title('Original Image')
