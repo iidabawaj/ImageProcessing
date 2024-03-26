@@ -14,7 +14,7 @@ personnel to take quick actions and avoid risks effectively.
 <img width="174" alt="image" src="https://github.com/iidabawaj/ImageProcessing/assets/139181626/7581d143-ef5b-40c8-985c-57da284c89cb">
 
 ### Methods used
-* Function fastNlMeansDenoisingColored from OpenCV library for Non-Local Means Denoising.
+*  Function fastNlMeansDenoisingColored from OpenCV library for Non-Local Means Denoising.
 * Function multiply from OpenCV library for enhancing colors by increasing the contrast.
 ### Code
 ```
@@ -285,9 +285,9 @@ plt.show()
 ![image](https://github.com/iidabawaj/ImageProcessing/assets/139181626/6ce3654c-3e92-4699-a2ba-c4a47515f58f)
 
 ### Methods used
-* Apply Function Histogram equalization (equalizeHist) from OpenCV to each channel.
-* Apply Bi-linear Interpolation to improve resolution.
-* Adjust the contrast using enhance_visibility function.
+*  Function Histogram equalization (equalizeHist) from OpenCV to each channel.
+*  Bi-linear Interpolation to improve resolution.
+* Enhance_visibility function to adjust the contrast.
 
 ### Code
 ```
