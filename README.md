@@ -16,11 +16,12 @@ personnel to take quick actions and avoid risks effectively.
 * Function fastNlMeansDenoisingColored from OpenCV library for Non-Local Means Denoising
 * Function multiply from OpenCV library for enhancing colors by increasing the contrast
 ### Code:
-'''
+```
 import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 
+# Load the image with salt-and-pepper noise
 image_path = '/content/parking.jpg'
 image = cv2.imread(image_path)
 
@@ -29,6 +30,7 @@ denoised_image = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
 contrast_factor = 1.2
 enhanced_color = cv2.multiply(denoised_image, np.array([contrast_factor]))
 
+# Display the original denoised image and the enhanced image using plt.subplot
 plt.figure(figsize=(15, 5))
 
 plt.subplot(131), plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)), plt.title('Original Image')
@@ -36,4 +38,4 @@ plt.subplot(132), plt.imshow(cv2.cvtColor(denoised_image, cv2.COLOR_BGR2RGB)), p
 plt.subplot(133), plt.imshow(cv2.cvtColor(enhanced_color.astype(np.uint8), cv2.COLOR_BGR2RGB)), plt.title('Enhanced Color')
 
 plt.show()
-'''
+```
